@@ -1,20 +1,23 @@
 package ch.test;
 
-public class Calculator {
+public final class Calculator {
 
-    public int add(int a, int b) {
+    public Calculator() {
+    }
+
+    public int add(final int a, final int b) {
         return a + b;
     }
 
-    public int substract(int a, int b) {
+    public int substract(final int a, final int b) {
         return a - b;
     }
 
-    public int square(int a) {
+    public int square(final int a) {
         return a * a;
     }
 
-    public int multiply(int a, int b) {
+    public int multiply(final int a, final int b) {
         return a * b;
     }
 }

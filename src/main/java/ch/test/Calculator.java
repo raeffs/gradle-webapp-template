@@ -1,5 +1,8 @@
 package ch.test;
 
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
 public final class Calculator {
 
     public Calculator() {

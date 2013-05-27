@@ -1,1 +1,3 @@
 rootProject.name = 'GradleWebapp'
+//rootProject.group = 'ch.test'
+//rootProject.version = '1.0-SNAPSHOT'

@@ -1,5 +1,6 @@
 apply plugin: 'war'
 
+group = 'ch.test'
 version = '1.0-SNAPSHOT'
 sourceCompatibility = '1.7'
 
@@ -16,6 +17,17 @@ repositories {
 
 war {
     archiveName = baseName + '.' + extension
+    manifest {
+    	attributes(
+    		"Specification-Title": project.name,
+    		"Specification-Version": project.version,
+    		"Specification-Vendor": project.group,
+    		"Implementation-Title": project.name,
+    		"Implementation-Version": project.version,
+    		"Implementation-Vendor": project.group,
+    		"Build-Time": new Date().format("yyyy-MM-dd HH:mm:ss")
+    	)
+    }
 }
 
 apply plugin: 'checkstyle'

@@ -1,0 +1,5 @@
+apply plugin: 'checkstyle'
+
+checkstyleTest {
+	configFile = file('./config/checkstyle/checkstyle-test.xml')
+}

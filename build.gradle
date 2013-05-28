@@ -1,4 +1,5 @@
 apply plugin: 'war'
+apply from: 'quality.gradle'
 
 group = 'ch.test'
 version = '1.0-SNAPSHOT'
@@ -28,10 +29,4 @@ war {
     		"Build-Time": new Date().format("yyyy-MM-dd HH:mm:ss")
     	)
     }
-}
-
-apply plugin: 'checkstyle'
-
-checkstyleTest {
-	configFile = file('./config/checkstyle/checkstyle-test.xml')
 }
